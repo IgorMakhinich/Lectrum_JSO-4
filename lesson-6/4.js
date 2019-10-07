@@ -35,6 +35,9 @@ const validateFunc = (func) => {
 const some = (array, cb) => {
     let out = false;
 
+    validateArr(array);
+    validateFunc(cb);
+
     for (let i = 0; i < array.length; i++) {
         if (cb(array[i], i, array)) {
             out = true;
