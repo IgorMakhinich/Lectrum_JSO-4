@@ -17,7 +17,7 @@
 // Решение
 const validateObj = (obj) => {
     const toString = Object.prototype.toString;
-    if (toString.call(user) !== '[object Object]') {
+    if (toString.call(obj) !== '[object Object]') {
         throw new Error(`argument ${obj} is not Object!`);
     }
 }
