@@ -35,7 +35,7 @@ const validObj = (obj) => {
     }
 }
 
-function bind(func, obj, ...params) {
+const bind = (func, obj, ...params) => {
     validFunc(func);
     validObj(obj);
 
